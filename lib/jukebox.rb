@@ -61,11 +61,11 @@ def run(songs)
 puts "Please enter a command:"
 user_selection = get_user.to_s
 while user_selection != "exit" do
-if user_selection.to_s == "help"
+if user_selection == "help"
   help
-elsif  user_selection.to_s == "play"
+elsif  user_selection == "play"
   play(songs)
-elsif  user_selection.to_s == "list"
+elsif  user_selection == "list"
   list(songs)
 end
 puts "Please enter a command:"
